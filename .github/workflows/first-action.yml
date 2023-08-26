@@ -1,0 +1,17 @@
+name: First Workflow
+# define when the workflow should be executed
+on: workflow_dispatch
+#makes sure we manually trigger the workflow
+#work that should be done with jobs key
+jobs:   
+  first-job: 
+    #define the runner on which the job will execute the steps
+    runs-on: macos-latest
+    # define steps to be executed
+    steps:
+    # key value pairs that define the steps
+      - name: Print greeting
+    # key that defines what should be run in the command line
+        run: echo "Hello World!"
+      - name: Print goodbye
+        rune: echo "Done - bye!"
