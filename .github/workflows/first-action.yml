@@ -14,4 +14,4 @@ jobs:
     # key that defines what should be run in the command line
         run: echo "Hello World!"
       - name: Print goodbye
-        rune: echo "Done - bye!"
+        run: echo "Done - bye!"
